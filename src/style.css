@@ -210,7 +210,6 @@ p {
     display: flex;
     justify-content: space-around;
     padding: 40px;
-    margin-bottom: 17vh;
    
 
 }
@@ -274,7 +273,7 @@ p {
     filter: grayscale(0%);
     transition: 0.1s ease-in-out;
     color: black;
-    transform: scale(1.02);
+    transform: scale(1.03);
 
 }
 
@@ -293,7 +292,7 @@ p {
 .css-icon:hover {
     filter: grayscale(0%);
     transition: 0.1s ease-in-out;
-    transform: scale(1.02);
+    transform: scale(1.03);
     color: black;
 }
 
@@ -313,7 +312,7 @@ p {
     filter: grayscale(0%);
     transition: 0.1s ease-in-out;
     color: black;
-    transform: scale(1.02);
+    transform: scale(1.03);
 }
 
 .js-icon:active {
@@ -330,7 +329,7 @@ p {
     filter: grayscale(0%);
     transition: 0.1s ease-in-out;
     color: black;
-    transform: scale(1.02);
+    transform: scale(1.03);
 }
 
 .react-icon:active {
@@ -349,11 +348,29 @@ p {
     filter: grayscale(0%);
     transition: 0.1s ease-in-out;
     color: black;
-    transform: scale(1.02);
+    transform: scale(1.03);
 }
 
 .cs-icon:active {
     transform: scale(1);
+    transition: 0.1s ease-in-out;
+}
+
+.java-icon {
+    filter: grayscale(100%);
+    color: transparent;
+    text-align: center;
+}
+
+.java-icon:hover{
+    filter: grayscale(0%);
+    transition: 0.1s ease-in-out;
+    color: black;
+    transform: scale(1.03);
+}
+
+.java-icon:active{
+    transform:scale(1);
     transition: 0.1s ease-in-out;
 }
 
@@ -525,6 +542,7 @@ h2 {
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
+        min-height: 100vh;
        
     }
 
@@ -552,6 +570,12 @@ h2 {
         flex-wrap: wrap;
         max-width: 300px;
     
+    }
+
+
+    input {
+        max-width: 90vw;
+
     }
 
     
@@ -636,7 +660,7 @@ input {
     margin-top: 3vh;
     margin-left: auto;
     margin-right: auto;
-    font-size: 26px;
+    font-size: 24px;
     background-color: #3f659b;
     text-decoration: none;
     color: rgb(210, 216, 210);
