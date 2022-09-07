@@ -15,6 +15,151 @@ body {
     font-family: 'Cabin', sans-serif;
     background-color: rgb(243, 244, 251);
 
+
+}
+
+body::-webkit-scrollbar {
+    width: 0.75rem;
+
+
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #3d2c6a;
+    border-radius: 5px;
+
+}
+
+
+
+:root {
+    font-size: 16px;
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+
+}
+
+nav {
+    font-size: 22px;
+}
+
+main {
+    margin-left: 6rem;
+    padding: 1rem;
+    
+
+}
+
+
+.navbar {
+    position: fixed;
+    background-color: #09223e;
+    transition: width 200ms ease;
+    z-index: 1;
+
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-item:last-child {
+    margin-top: auto;
+
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: 0.1s ease-in-out;
+
+}
+
+.nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+
+}
+
+.link-text {
+    display: none; 
+    margin-left: 1rem;
+
+
+}
+
+.nav-link svg {
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+
+.navbar:hover .link-text {
+    display: block;
+}
+
+
+.fa-primary {
+    color: #b860ef;
+
+
+}
+
+.fa-secondary {
+    color: #8d47b9;
+}
+
+.fa primary, .fa-secondary {
+    transition: var(--transition-speed);
+
+}
+
+.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    font-size: 1.5rem;
+    letter-spacing: 0.1ch;
+    width: 100%;
+
+}
+
+.logo svg {
+    transition: 400ms ease-in-out;
+    transform: scale(1);
+}
+
+.navbar:hover .logo svg {
+    transform: rotate(-180deg);
+    margin-right: auto;
+    transition: scale(1);
+
 }
 
 
@@ -58,37 +203,6 @@ a {
 
 }
 
-.logo {
-    padding-left: 7.5px;
-    padding-top: 7.5px;
-}
-
-
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 2.5px;
-    letter-spacing: 0.5px;
-    text-align: center;
-    margin-right: 2vw;
-}
-
-
-ul {
-    display: flex;
-    list-style-type: none;
-    width: 500px;
-    justify-content: space-around;
-    font-size: 30px;
-
-}
-
-li {
-    width: 200px;
-    text-decoration: none;
-
-}
 
 h1 {
     font-size: 90px;
@@ -112,7 +226,7 @@ p {
 
 .hero-text {
     margin-top: 25vh;
-    padding-left: 50px;
+    padding-left: 55px;
 
 
 }
@@ -126,6 +240,9 @@ p {
     background-color: #63657a;
 
 }
+
+
+
 
 
 .socials {
@@ -170,18 +287,6 @@ p {
 
 
 
-.nav-links {
-    text-decoration: none;
-    color: white;
-    font-size: 34px;
-    text-align: center;
-}
-
-.nav-links:hover {
-    font-weight: 700;
-    font-size: 35px;
-    transition: 0.1s ease-in-out;
-}
 
 .sub-section {
     background-color: rgb(243, 244, 251);
@@ -201,11 +306,12 @@ p {
     margin-bottom: 170px;
 }
 
+
 .resume {
     margin-top: 25px;
     background-color: #4f5f6d;
     width: 11rem;
-    min-height: 3.5vh;
+    min-height: 4vh;
     font-weight: 600;
     font-size: 22px;
     color: whitesmoke;
@@ -413,13 +519,45 @@ h2 {
 
 /* Media Queries */
 
-@media only screen and (max-width: 570px) {
+@media only screen and (max-width: 600px) {
 
 
- 
-    ul {
-        visibility: hidden;
+
+    .navbar {
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+        z-index: 1;
+
     }
+
+
+    .link-text {
+        display: hidden;
+        
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+
+    }
+
+    .nav-link {
+        justify-content: center;
+    }
+
+    main {
+        margin: 0;
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
 
     .project-container {
         display: flex;
@@ -427,19 +565,24 @@ h2 {
         
     }
 
+    .proj-buttons {
+        min-width: 10vw;
+        min-height: 6vh;
+    }
+
     .hero {
         display: flex;
         flex-wrap: wrap;
     }
     .hero-text {
-        margin-left: 2vw;
+        margin-left: -1vw;
         padding: 0;
     
     }
 
     .socials {
-        margin-left: -12vw;
-        margin-top: -17vh;
+        margin-left: -15vw;
+        margin-top: -18vh;
     }
 
 
@@ -484,17 +627,36 @@ h2 {
 
 
     input {
+        min-height: 4vh;
         max-width: 90vw;
+      
 
     }
-
-    
 
 
 
 }
 
-@media only screen and (width: 1600px) {
+@media only screen and (min-width: 600px) {
+
+    .navbar {
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
+
+    .navbar:hover {
+        width: 16rem;
+    }
+
+    .navbar:hover .link-text {
+        display: inline;
+        transition: opacity var(--transition-speed);
+    }
+    
+
+
+
     .project-container {
         display: flex;
         flex-wrap: wrap;
@@ -510,6 +672,7 @@ h2 {
 
 
 
+
 footer {
 
     background: rgb(15,12,78);
@@ -517,7 +680,7 @@ footer {
     text-align: center;
     padding-top: 50px;
     color: white;
-    height: 630px;
+    min-height: 65vh;
 }
 
 #contact {
@@ -531,9 +694,9 @@ footer {
 }
 
 .lmk {
-    width: 400px;
-    height: 130px;
-    margin-top: 2vh;
+    min-width: 20vw;
+    height: 150px;
+    
 }
 
 .contact-form {
@@ -542,7 +705,6 @@ footer {
     width: 30vw;
     justify-content: center;
     flex-direction: row;
-    text-align: center;
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;  
@@ -552,8 +714,9 @@ input {
     display: flex;
     justify-content: center;
     border-radius: 3px;
-    width: 400px;
+    width: 500px;
     height: 2.5vh;
+    margin-top: 3vh;
     margin-left: auto;
     margin-right: auto;
     background-color: #e4e4e2;
@@ -563,17 +726,17 @@ input {
 
 .contactb {
     min-width: 13vw;
-    height: 4vh;
+    min-height: 5vh;
     margin-top: 3vh;
     margin-left: auto;
     margin-right: auto;
     font-size: 24px;
-    background-color: #3f659b;
+    background-color: #315e9d;
     text-decoration: none;
     color: rgb(210, 216, 210);
     border-radius: 4px;
     font-family: 'Asap', sans-serif;
-    border: 2px solid rgb(175, 194, 209);
+    border: 2.5px solid rgb(175, 194, 209);
     font-weight: 600;
 }
 
@@ -592,12 +755,14 @@ input {
 .f-email {
     font-size: 22px;
     margin-bottom: 10px;
+    padding-left: 10px;
 }
 
 .f-message {
     font-size: 22px;
     margin-top: 10px;
     margin-bottom: -10px;
+    padding-left: 10px;
 
 }
 
