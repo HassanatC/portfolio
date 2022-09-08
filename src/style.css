@@ -60,7 +60,7 @@ main {
 
 .navbar {
     position: fixed;
-    background-color: #09223e;
+    background-color: #062446;
     transition: width 200ms ease;
     z-index: 1;
 
