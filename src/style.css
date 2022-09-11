@@ -60,7 +60,7 @@ main {
 
 .navbar {
     position: fixed;
-    background-color: #062446;
+    background-color: #0c2c24;
     transition: width 200ms ease;
     z-index: 1;
 
@@ -123,13 +123,13 @@ main {
 
 
 .fa-primary {
-    color: #b860ef;
+    color: #ad41f0;
 
 
 }
 
 .fa-secondary {
-    color: #8d47b9;
+    color: #6e3790;
 }
 
 .fa primary, .fa-secondary {
@@ -152,13 +152,13 @@ main {
 
 .logo svg {
     transition: 400ms ease-in-out;
-    transform: scale(1);
+    transition: scale(3);
 }
 
 .navbar:hover .logo svg {
     transform: rotate(-180deg);
     margin-right: auto;
-    transition: scale(1);
+    transition: scale(3);
 
 }
 
@@ -327,10 +327,11 @@ p {
 }
 
 .resume:active {
-    background-color: #919db5;
+    background-color: #7b92a7;
     transition: 0.1s ease-in-out;
-    transform: scale(0.98);
+    transform: scale(0.97);
     color: black;
+    border-radius: 6px;
 }
 
 
@@ -527,36 +528,35 @@ h2 {
         bottom: 0;
         width: 100vw;
         height: 5rem;
-        z-index: 1;
-
-    }
-
-
-    .link-text {
-        display: hidden;
-        
-    }
-
-    .logo {
+      }
+    
+      .logo {
         display: none;
-    }
-
-    .navbar-nav {
+      }
+    
+      .navbar-nav {
         flex-direction: row;
-
-    }
-
-    .nav-link {
+      }
+    
+      .nav-link {
         justify-content: center;
-    }
-
-    main {
+      }
+    
+      main {
         margin: 0;
-    }
+      }
 
-    body::-webkit-scrollbar {
-        display: none;
-    }
+
+
+      
+
+
+
+
+
+
+
+
 
 
     .project-container {
@@ -637,6 +637,12 @@ h2 {
 
 }
 
+
+
+
+
+
+
 @media only screen and (min-width: 600px) {
 
     .navbar {
@@ -654,7 +660,6 @@ h2 {
         transition: opacity var(--transition-speed);
     }
     
-
 
 
     .project-container {
@@ -750,6 +755,7 @@ input {
     transform:scale(0.98);
     transition: 0.1s ease-in-out;
     background-color: #1b2b3f;
+    border-radius: 8px;
 }
 
 .f-email {
