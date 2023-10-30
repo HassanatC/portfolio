@@ -49,7 +49,7 @@ const About = ({ isShowing, toggleFB, toggleFN }) => {
             <p className="subtext">Full-Stack file hosting/sharing web application, allowing for cloud storage and sharing of your favourite files.</p>
 
             <button onClick={toggleFN} className="proj-buttons">Open</button>
-            <a href="https://github.com/HassanatC/filenexus" className="project-links" target="_blank" rel="noreferrer"><button className="proj-buttons">Source Code</button></a>
+            <a href="https://github.com/HassanatC/filenexus" className="project-links" target="_blank" rel="noreferrer"><button className="proj-buttons">Source</button></a>
         </div>
 
         <div className="project-card">

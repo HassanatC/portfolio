@@ -638,6 +638,7 @@ padding: 125px;
 
   .proj-buttons {
       min-width: 10vw;
+      margin-top: 25px;
       min-height: 4.5vh;
   }
 
