@@ -192,7 +192,7 @@ section {
   min-height: 100vh;
   color: white;
   font-size: 40px;
-  background-image: url('images/pexels-space.jpg');
+  background-image: url('/images/pexels-space.jpg');
   background-size: cover;
   background-position: center center;
 }
@@ -203,12 +203,12 @@ section {
 }
 
 .herobackground {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.701), rgba(0, 0, 0, 0.55)), url('images/pexels-space.jpg');
-background-size: cover;
-background-position: center center;
-height: 100vh;
-display: flex;
-align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.701), rgba(0, 0, 0, 0.55)), url('/images/pexels-space.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 a {
@@ -444,7 +444,6 @@ h2 {
 }
 
 .project-card:hover {
-
   box-shadow: 5px 5px 1px rgba(6, 42, 159, 0.384);
   transition: 0.1s ease-in-out;
   transform: scale(1.015);
