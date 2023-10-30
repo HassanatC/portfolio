@@ -25,8 +25,8 @@ return isShowing ? (
             className="fn-image"
             src={images[currentImageIndex]}
             alt="Project"
-            width="1000"
-            height="525"
+            width="800"
+            height="415"
           />
 
         <button onClick={handlePrevious} className="button-prev">Previous</button>

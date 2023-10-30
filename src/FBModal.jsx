@@ -18,15 +18,15 @@ const Modal = ({ isShowing, toggle, images }) => {
   };
 
 return isShowing ? (
-  <div className="modal">
+  <div className="modal-fn">
     <div className="modal-content">
         <button className="close-button" onClick={toggle}>Close</button>
         <img
             className="fb-image"
             src={images[currentImageIndex]}
             alt="Project"
-            width="400"
-            height="820"
+            width="350"
+            height="720"
           />
 
         <button onClick={handlePrevious} className="button-prev">Previous</button>

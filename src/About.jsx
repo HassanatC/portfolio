@@ -18,10 +18,6 @@ const About = ({ toggleFB, toggleFN }) => {
 
                 <p className="info">I have finished studying Computer Science at masters level at the University fo Birmingham, and have created a file sharing web application as my summer project.</p>
 
-                <a className="resume-link" href="./assets/CV4P.pdf" target="_blank" rel="noopener noreferrer">
-                    <button className="resume">My Resume</button>
-                </a>
-
 
     <h2 className="projectHeader" id="projects">My Portfolio</h2>
 

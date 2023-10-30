@@ -12,7 +12,7 @@ const Navbar = () => {
         <li className="logo">
             <a href="#home" className="nav-link">
                 <div className="link-text logo-text fade-in-text hlogo">
-             <img src="src/images/Hlogo.png" />
+             <img src="images/Hlogo.png" />
                 </div>
             <span className="link-text logo-text fade-in-text"></span>
             </a>
