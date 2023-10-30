@@ -12,7 +12,7 @@ const About = ({ isShowing, toggleFB, toggleFN }) => {
 
             <p className="info"> I am a software engineer, UI designer, and student. I enjoy History and studied it at University, and slowly after my degree ended, I decided to start teaching myself how to program.</p>
 
-                <p className="info"> I like to write code in Java and JavaScript, and will soon be making projects in Python. I like to build software with good user-oriented design. I also like to scheme and create good websites and user interfaces.</p>
+                <p className="info"> I like to write code in Java and JavaScript, and have made projects in Python. I like to build software with good user-oriented design. I also like to create good websites and user interfaces.</p>
                 
                 <p className="info">You can see some of it on my <a className="gitLink" href="https://github.com/HassanatC">GitHub</a>, and from projects here.</p>
 
