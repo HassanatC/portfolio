@@ -10,8 +10,8 @@ function App() {
   const [isFBShowing, setIsFBShowing] = useState(false);
   const [isFNShowing, setIsFNShowing] = useState(false);
 
-  const fbImages = ['src/images/fb1.jpeg', 'src/images/fb2.jpeg', 'src/images/fb3.jpeg', 'src/images/fb4.jpeg'];
-  const fnImages = ['src/images/filenexus.png', 'src/images/filenexus2.png', 'src/images/filenexus4.png']
+  const fbImages = ['/images/fb1.jpeg', '/images/fb2.jpeg', '/images/fb3.jpeg', '/images/fb4.jpeg'];
+  const fnImages = ['/images/filenexus.png', '/images/filenexus2.png', '/images/filenexus4.png']
 
   const toggleFB = () => {
     setIsFBShowing(!isFBShowing);

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const About = ({ isShowing, toggleFB, toggleFN }) => {
+const About = ({ toggleFB, toggleFN }) => {
 
     return (
     <>
@@ -18,7 +18,7 @@ const About = ({ isShowing, toggleFB, toggleFN }) => {
 
                 <p className="info">I have finished studying Computer Science at masters level at the University fo Birmingham, and have created a file sharing web application as my summer project.</p>
 
-                <a className="resume-link" href="./src/assets/CV4P.pdf" target="_blank" rel="noopener noreferrer">
+                <a className="resume-link" href="./assets/CV4P.pdf" target="_blank" rel="noopener noreferrer">
                     <button className="resume">My Resume</button>
                 </a>
 
@@ -30,7 +30,7 @@ const About = ({ isShowing, toggleFB, toggleFN }) => {
         <div className="project-card">
 
         
-        <img className="project-image" src="src/images/fb2.jpeg" width="130" height="260" alt="Project Pic"></img>
+        <img className="project-image" src="images/fb2.jpeg" width="130" height="260" alt="Project Pic"></img>
 
         <h3>FitBites</h3>
 
@@ -43,7 +43,7 @@ const About = ({ isShowing, toggleFB, toggleFN }) => {
 
         <div className="project-card">
 
-            <img className="project-image" src="src/images/filenexus.PNG" width="335" height="200" alt="Project Pic"></img>
+            <img className="project-image" src="images/filenexus.png" width="335" height="200" alt="Project Pic"></img>
 
             <h3>FileNexus</h3>
             <p className="subtext">Full-Stack file hosting/sharing web application, allowing for cloud storage and sharing of your favourite files.</p>
@@ -53,7 +53,7 @@ const About = ({ isShowing, toggleFB, toggleFN }) => {
         </div>
 
         <div className="project-card">
-            <img className="project-image" src="src/images/dripzone.PNG" width="335" height="200" alt="Project Pic"></img>
+            <img className="project-image" src="/images/dripzone.png" width="335" height="200" alt="Project Pic"></img>
 
             <h3>DRIP ZONE</h3>
             <p className="subtext">E-commerce site for clothing, particularly designer streetwear clothing, jackets and accessories.</p>
