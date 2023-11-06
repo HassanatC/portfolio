@@ -28,8 +28,7 @@ function App() {
       <About toggleFB={toggleFB} toggleFN={toggleFN} isFBShowing={isFBShowing} isFNShowing={isFNShowing} />
       <FBModal isShowing={isFBShowing} toggle={toggleFB} images={fbImages} />
       <FNModal isShowing={isFNShowing} toggle={toggleFN} images={fnImages} />
-
-      {/* other components can go here */}
+      
     </div>
   );
 }

@@ -25,14 +25,15 @@ return isShowing ? (
             className="fb-image"
             src={images[currentImageIndex]}
             alt="Project"
-            width="350"
+            width="340"
             height="720"
           />
 
+      <div className="btn-container">
         <button onClick={handlePrevious} className="button-prev">Previous</button>
         <button onClick={handleNext} className="button-prev">Next</button>
-
-          <p className="modal-text">The UI interface and design for the mobile food delivery app FitBites.</p>
+      </div>
+        <p className="modal-text">The UI interface and design for the mobile food delivery app FitBites.</p>
     </div>
   </div>
 ) : null;

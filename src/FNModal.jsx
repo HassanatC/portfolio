@@ -29,8 +29,10 @@ return isShowing ? (
             height="415"
           />
 
+      <div className="btn-container">
         <button onClick={handlePrevious} className="button-prev">Previous</button>
         <button onClick={handleNext} className="button-prev">Next</button>
+      </div>
 
           <p className="modal-text">The UI and front-end for FileNexus, a full-stack file sharing web application.</p>
     </div>

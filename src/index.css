@@ -19,7 +19,8 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #6342bd;
+  background: rgb(42, 8, 42);
+  border: 1px solid rgb(67, 61, 67);
   border-radius: 5px;
 }
 
@@ -28,6 +29,8 @@ body {
   font-family: 'Cabin', sans-serif;
   background-color: rgb(243, 244, 251);
   color: black;
+  margin: 0;
+  padding: 0;
 }
 
 .gitLink {
@@ -54,7 +57,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #563aa6;
+  background: #37246b;
   border-radius: 5px;
 }
 
@@ -63,7 +66,7 @@ body::-webkit-scrollbar-thumb {
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
   --bg-primary: #23232e;
-  --bg-secondary: #141418;
+  --bg-secondary: #0d0d14;
 }
 
 input::placeholder {
@@ -80,26 +83,27 @@ input[name='name']::placeholder {
 
 nav {
   font-size: 22px;
+  font-weight: 500;
 }
 
 main {
   margin-left: 6rem;
   padding: 1rem;
-
 }
 
 .navbar {
   position: fixed;
-  background-color: #0f0814f7;
+  background-color: rgb(22, 13, 28);
   transition: all ease-in-out 0.35s;
   z-index: 1;
-  font-family: 'Archivo';
+  width: 20px;
+  font-family: 'Cabin';
   font-weight: 400;
 }
 
 .navbar-nav {
   list-style: none;
-  padding: 0;
+  padding: 5px;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -118,6 +122,8 @@ main {
   display: flex;
   align-items: center;
   height: 5rem;
+  padding: 0px;
+  border-radius: 5px;
   color: var(--text-primary);
   text-decoration: none;
   font-weight: 550;
@@ -362,26 +368,6 @@ font-weight: 700;
 letter-spacing: 1px;
 }
 
-.fb-image {
-  display: flex;
-  margin-top: 5vh;
-  margin-left: 25vh;
-}
-
-.fn-image {
-  display: flex;
-  margin-left: 2vh;
-  margin-top: 6vh;
-  margin-bottom: 2vh;
-}
-
-.proficiency {
-  margin-top: 7.5vh;
-  font-size: 26px;
-  margin-right: 5vh;
-  margin-bottom: 3vh;
-}
-
 .languages {
   display: flex;
   flex-direction: row;
@@ -396,7 +382,7 @@ h2 {
 /* Icons */
 
 .home-icon {
-  width: 45px;
+  width: 40px;
   padding: 10px;
 }
 
@@ -405,11 +391,11 @@ h2 {
  max-width: 800px;
  line-height: 1.2;
  margin-top: 50px;
- margin-bottom: 10px;
+ margin-bottom: 5px;
 }
 
 .information {
-  margin-top: 10vh;
+  margin-top: 5vh;
   padding: 125px;
 }
 
@@ -429,7 +415,7 @@ h2 {
 }
 
 .projectHeader {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .project-card {
@@ -456,6 +442,14 @@ h2 {
 
 }
 
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
 .proj-buttons {
   display: inline-block;
   background-color: #ffffffc5;
@@ -476,7 +470,7 @@ h2 {
 
 .proj-buttons:hover {
   transition: 0.1s ease-in;
-  background-color: rgb(114, 2, 114);
+  background-color: rgb(99, 5, 99);
   color:white;
 }
 
@@ -506,22 +500,9 @@ h2 {
   justify-content: space-evenly;
   margin-top: 10px;
   margin-bottom: 250px;
-
 }
 
 /* Modal */
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-}
 
 .modal-fn {
   position: fixed;
@@ -536,6 +517,45 @@ h2 {
   z-index: 1000;
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.fb-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fn-image {
+  display: flex;
+}
+
+.modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  height: 82.5%;
+  width: 87.5%;
+  position: relative;
+}
+
 .close-button {
   position: absolute;
   top: 20px;
@@ -543,10 +563,10 @@ h2 {
   background: none;
   border: none;
   color: #333;
-  font-size: 22px;
+  font-size: 18px;
   cursor: pointer;
   padding: 7.5px;
-  border-radius: 10px;
+  border-radius: 7.5px;
   border: 2px solid #ccc;
   transition: all 0.3s ease;
 }
@@ -555,9 +575,31 @@ h2 {
   font-size: 22px;
 }
 
+.carousel {
+  position: relative;
+  height: 720px; /* Adjust based on your needs */
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+
 .close-button:hover {
   color: #fff;
-  background-color: #333;
+  background-color: #514545;
   border-color: transparent; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -582,17 +624,6 @@ h2 {
   background-color: white;
   color: rgb(105, 3, 105);
 }
-
-
-.modal-content {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  height: 80%;
-  width: 75%;
-  position: relative;
-}
-
 
 /* Media Queries */
 
@@ -625,8 +656,8 @@ h2 {
     }
 
     .projectHeader {
-      margin-top: 100vh;
-      margin-bottom: 10vh;
+      margin-top: 10vh;
+      margin-bottom: 5vh;
     }
 
     .proficiency {
@@ -645,8 +676,7 @@ h2 {
 
   .project-container {
       display: flex;
-      flex-wrap: wrap;
-      
+      flex-wrap: wrap;  
   }
 
   .proj-buttons {
@@ -687,9 +717,7 @@ h2 {
       margin-top: -15vh;
   }
 
-
   .sub-section {
-
       display: flex;
       flex-wrap: wrap;
       max-width: 90vw;
@@ -713,7 +741,6 @@ h2 {
   }
 
   .sub-section-alternative {
-
       display: flex;
       flex-wrap: wrap;
   
@@ -724,7 +751,7 @@ h2 {
       flex-wrap: wrap;
       max-width: 300px;
       margin-bottom: 5vh;
-  
+
   }
 
   .contactb {
@@ -732,7 +759,6 @@ h2 {
   }
 
 }
-
 
 @media only screen and (min-width: 600px) {
 
@@ -752,19 +778,17 @@ h2 {
   }
 
   .projectHeader {
-      margin-top: 50vh;
+      margin-top: 10vh;
   }
 
   .project-container {
       display: flex;
       flex-wrap: wrap;
-
   }
 
   .sub-section-alternative {
       flex-wrap: wrap;
   }
-
 
 }
 
@@ -797,18 +821,6 @@ footer {
   min-width: 20vw;
   height: 150px;
   overflow-wrap: break-word;
-  
-}
-
-.contact-form {
-  margin-top: 5vh;
-  display: flex;
-  width: 30vw;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;  
 }
 
 input {
@@ -845,7 +857,6 @@ input {
   transition: 0.1s ease-in-out;
   background-color: rgb(158, 128, 71);
   transform: scale(1.05);
-  
 }
 
 .contactb:active {
@@ -866,7 +877,6 @@ input {
   margin-top: 10px;
   margin-bottom: -10px;
   padding-left: 10px;
-
 }
 
 .copyright {
@@ -874,7 +884,6 @@ input {
   margin-top: 9vh;
   margin-left: 75vw;
 }
-
 
 .fade {
 

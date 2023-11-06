@@ -12,11 +12,11 @@ const About = ({ toggleFB, toggleFN }) => {
 
             <p className="info"> I am a software engineer, UI designer, and student. I enjoy History and studied it at University, and slowly after my degree ended, I decided to start teaching myself how to program.</p>
 
-                <p className="info"> I like to write code in Java and JavaScript, and have made projects in Python. I like to build software with good user-oriented design. I also like to create good websites and user interfaces.</p>
+                <p className="info"> I like to write code in Python and JavaScript. I also know Java and some Go, with my best projects in Python. I like to build software with good user-oriented design. I also like to create websites and user interfaces.</p>
                 
-                <p className="info">You can see some of it on my <a className="gitLink" href="https://github.com/HassanatC">GitHub</a>, and from projects here.</p>
+                <p className="info">You can see some of it on my <a className="gitLink" href="https://github.com/HassanatC">GitHub</a>, and from projects on my portfolio here.</p>
 
-                <p className="info">I have finished studying Computer Science at masters level at the University fo Birmingham, and have created a file sharing web application as my summer project.</p>
+                <p className="info">I have finished studying Computer Science at masters level at the University of Birmingham, and have created a file sharing web application as my summer project.</p>
 
 
     <h2 className="projectHeader" id="projects">My Portfolio</h2>
